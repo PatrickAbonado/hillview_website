@@ -1,22 +1,29 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --berry: #3b1f5e;
-    --berry-mid: #5c3080;
-    --berry-light: #e8d9f7;
-    --berry-pale: #f7f2fc;
+    --berry: #1a3a6e;
+    --berry-mid: #2d5faa;
+    --berry-light: #c8e0ff;
+    --berry-pale: #eef5ff;
     --leaf: #2d5a27;
     --leaf-light: #e5f0e3;
     --gold: #c89b3c;
     --gold-light: #fdf3dc;
-    --cream: #fdf8f0;
-    --ink: #1a1209;
-    --muted: #6b5e4e;
-    --border: rgba(59,31,94,0.12);
+    --cream: #f4f8ff;
+    --ink: #0d1a2e;
+    --muted: #4a6080;
+    --border: rgba(26,58,110,0.12);
     --radius: 16px;
   }
 
   html { scroll-behavior: smooth; }
+
+  /* shift 🫐 blueberry emoji from purple to bright blue via parent elements */
+  .nav-logo,
+  .quality-card-icon,
+  .biz-card-icon {
+    filter: hue-rotate(-40deg) saturate(2) brightness(1.2);
+  }
 
   body {
     font-family: 'DM Sans', sans-serif;
@@ -35,7 +42,7 @@
     justify-content: space-between;
     padding: 0 2.5rem;
     height: 64px;
-    background: rgba(253,248,240,0.92);
+    background: rgba(244,248,255,0.92);
     backdrop-filter: blur(12px);
     border-bottom: 0.5px solid var(--border);
   }
@@ -80,7 +87,7 @@
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(to bottom, rgba(26,18,9,0.1) 0%, rgba(26,18,9,0.6) 100%),
+      linear-gradient(to bottom, rgba(13,26,46,0.1) 0%, rgba(13,26,46,0.6) 100%),
       url('https://images.unsplash.com/photo-1596591868231-05e808fd131d?w=1600&q=80') center/cover no-repeat;
     transform: scale(1.03);
     animation: slowzoom 18s ease-in-out infinite alternate;
@@ -331,7 +338,7 @@
     border-radius: var(--radius);
     overflow: hidden;
     position: relative;
-    background: #c8dac4;
+    background: #b8d4f0;
   }
 
   .photo-item:first-child {
@@ -364,7 +371,7 @@
   .photo-label {
     position: absolute;
     bottom: 0; left: 0; right: 0;
-    background: linear-gradient(to top, rgba(26,18,9,0.7), transparent);
+    background: linear-gradient(to top, rgba(13,26,46,0.7), transparent);
     padding: 1.5rem 1rem 0.8rem;
     color: #fff;
     font-size: 0.8rem;
