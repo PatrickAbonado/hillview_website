@@ -24,10 +24,8 @@
     filter: hue-rotate(-40deg) saturate(2) brightness(1.2);
   }
 
-  @media (min-width: 1025px) {
-    .nav-logo {
-      filter: hue-rotate(-40deg) saturate(2) brightness(1.2);
-    }
+  .nav-logo {
+    filter: hue-rotate(-40deg) saturate(2) brightness(1.2);
   }
 
   body {
