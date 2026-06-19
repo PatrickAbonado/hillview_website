@@ -305,7 +305,7 @@
 <section class="business" id="visit">
   <span class="section-tag">Visit the Farm</span>
   <h2 class="section-title">Come <em>Pick</em> With Us</h2>
-  <p style="color:rgba(255,255,255,0.7);font-size:1rem;line-height:1.75;max-width:560px;font-weight:300;">We're open every single day of the season. Find us just outside Keuka Lake. Just grab a bucket with a bag in it and start picking.</p>
+  <p style="color:rgba(255,255,255,0.7);font-size:1rem;line-height:1.75;max-width:560px;font-weight:300;">We're open every single day of the season. Find us just outside Keuka Lake. When you get here just grab a bucket with a bag in it and start picking!</p>
 
   <div class="biz-grid">
     <div class="biz-card">
@@ -351,23 +351,7 @@
   <p style="margin-top:0.5rem;">Open Sunrise to Sunset · 7 Days a Week · Till Season's End</p>
 </footer>
 
-<script>
-  const hamburger = document.querySelector('.nav-hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  hamburger.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('nav-open');
-    hamburger.classList.toggle('is-open', open);
-    hamburger.setAttribute('aria-expanded', open);
-  });
-  // close menu when a link is tapped
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('nav-open');
-      hamburger.classList.remove('is-open');
-      hamburger.setAttribute('aria-expanded', false);
-    });
-  });
-</script>
+<script src="hillview_js.js"></script>
 
 </body>
 </html>
