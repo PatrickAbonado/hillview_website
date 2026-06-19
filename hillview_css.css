@@ -19,9 +19,12 @@
   html { scroll-behavior: smooth; overflow-x: hidden; }
 
   /* shift 🫐 blueberry emoji from purple to bright blue via parent elements */
-  .quality-card-icon,
   .biz-card-icon {
     filter: hue-rotate(-40deg) saturate(2) brightness(1.2);
+  }
+
+  .quality-card-icon {
+    filter: hue-rotate(-40deg) saturate(1.1) brightness(0.85);
   }
 
   .nav-logo {
@@ -261,7 +264,7 @@
   .quality-card-icon {
     width: 48px;
     height: 48px;
-    background: var(--berry-light);
+    background: #93b3d9;
     border-radius: 12px;
     display: flex;
     align-items: center;
