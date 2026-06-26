@@ -116,7 +116,10 @@ nav {
 }
 
 .hero-eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 0.5em;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.18em;
@@ -126,6 +129,17 @@ nav {
   border: 0.5px solid var(--gold);
   border-radius: 40px;
   padding: 0.3rem 0.9rem;
+}
+.eyebrow-sep {
+  letter-spacing: 0;
+}
+@media (max-width: 600px) {
+  .hero-eyebrow {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1em 0;
+  }
+  .eyebrow-sep { display: none; }
 }
 
 .hero h1 {
