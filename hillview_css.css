@@ -365,14 +365,29 @@ section:not(.hero) { padding: 6rem 5%; }
   overflow: hidden;
   position: relative;
   background: #b8d4f0;
-  aspect-ratio: 16 / 10;   /* Consistent size across both sections */
+  aspect-ratio: 16 / 15;   /* Consistent size across both sections */
 }
 
-.photo-item a {
+/* Full-card clickable link — covers image + both label overlays */
+.photo-link {
   display: block;
   width: 100%;
   height: 100%;
+  position: absolute;
+  inset: 0;
   cursor: pointer;
+  /* Eliminate 300ms tap delay on mobile */
+  touch-action: manipulation;
+  /* Sits above image but labels are inside the link so no conflict */
+  z-index: 2;
+  border-radius: var(--radius);
+  outline-offset: 3px;
+}
+
+/* Subtle tap feedback on mobile */
+.photo-link:active img {
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
 }
 
 .photo-item img {
@@ -394,6 +409,7 @@ section:not(.hero) { padding: 6rem 5%; }
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.03em;
+  pointer-events: none;   /* let taps pass through to the parent link */
 }
 
 .photo-label-top {
@@ -405,6 +421,7 @@ section:not(.hero) { padding: 6rem 5%; }
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.03em;
+  pointer-events: none;   /* let taps pass through to the parent link */
 }
 
 .update-note {
