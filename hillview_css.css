@@ -748,6 +748,9 @@ footer strong { color: rgba(255,255,255,0.8); font-weight: 500; }
     box-shadow: 0 8px 24px rgba(13,26,46,0.1);
     list-style: none;
     z-index: 998;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .nav-links.nav-open { display: flex; }
   .nav-links li a {
