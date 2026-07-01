@@ -606,6 +606,8 @@ section:not(.hero) { padding: 6rem 5%; }
   border-radius: var(--radius);
   padding: 1.75rem;
   backdrop-filter: blur(4px);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .biz-card-icon {
@@ -646,9 +648,17 @@ section:not(.hero) { padding: 6rem 5%; }
   line-height: 1.6;
   font-weight: 300;
   text-decoration: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .biz-card a:hover { text-decoration: underline; }
+
+.email-link {
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 
 .pricing-row {
   display: flex;
