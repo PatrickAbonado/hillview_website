@@ -692,6 +692,35 @@ footer {
 
 footer strong { color: rgba(255,255,255,0.8); font-weight: 500; }
 
+/* ── NAV CONTROLS (back + hamburger) ── */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nav-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  color: var(--berry);
+  transition: background 0.2s;
+}
+
+.nav-back:hover { background: var(--berry-pale); }
+
+.nav-back svg {
+  width: 20px;
+  height: 20px;
+}
+
 /* ── HAMBURGER ── */
 .nav-hamburger {
   display: none;
