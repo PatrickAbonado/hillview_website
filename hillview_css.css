@@ -238,7 +238,7 @@ section:not(.hero) { padding: 6rem 5%; }
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
-  aspect-ratio: 4/5;
+  aspect-ratio: 3/4;
 }
 
 .about-visual img {
@@ -813,7 +813,7 @@ footer strong { color: rgba(255,255,255,0.8); font-weight: 500; }
   .hero-pick-own { display: block; text-align: left;  margin-bottom: 1.0rem; margin-top: 8.0rem;}
   .hero-prepicked { display: block; text-align: left; }
   .about, .report { grid-template-columns: 1fr; gap: 2rem; }
-  .about-visual { aspect-ratio: 4/3; }
+  .about-visual { aspect-ratio: 3/4; }
 
   /* Where to Pick becomes 2 columns on mobile */
   .photo-grid {
